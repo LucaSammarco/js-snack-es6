@@ -38,12 +38,19 @@
 
 const tavoloVip = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
 
-// tavoloVip.forEach((element, index) => {
-//     console.log(element, index)
-// });
-
-nuovoTavolo = tavoloVip.map((x, index) => {
-    return "--" + x + "--" + " "+ index
+tavoloVip.forEach((element, index) => {
+    nuovoTavolo = tavoloVip.map((x, index) => {
+        return lista = {tableName: "tavoloVip", guestName: x, place:index }
+    });
 });
 
-console.log(nuovoTavolo)
+// nuovoTavolo = tavoloVip.map((x, index) => {
+//     return "--" + x + "--" + " "+ index
+// })
+
+
+
+
+
+
+console.log()
