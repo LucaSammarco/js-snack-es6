@@ -66,12 +66,8 @@ const studenti = [
 
 
 
-const targhe = studenti.map((y) => y.nome{
-    
-return ({name: y })
+const targhe = studenti.map(y => {
+    return { name: y.name.toUpperCase()};
+});
 
- });
-
-console.log(targhe)
-
-// console.log(studenti);
+console.log(targhe);
