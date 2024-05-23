@@ -65,9 +65,15 @@ const studenti = [
 ];
 
 
-
+//TODO Uppercase list
 const targhe = studenti.map(y => {
     return { name: y.name.toUpperCase()};
 });
 
 console.log(targhe);
+
+//? Over 70
+
+goodGrades = studenti.filter(studente => studente.grades >= 70)
+
+console.log(goodGrades)
