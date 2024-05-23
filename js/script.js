@@ -38,21 +38,9 @@
 
 const tavoloVip = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
 
-nuovaLista = []
 
-// tavoloVip.forEach((element, index) => {
-    
-// });
-
-// nuovoTavolo = tavoloVip.map((x, index) => {
-//     return "--" + x + "--" + " "+ index
-// })
-
-
-
-element = tavoloVip.map((x, index) => {
-        
-    return nuovaLista.push({tableName: "tavoloVip", guestName: x, place:index })
+nuovaLista = tavoloVip.map((x, index) => {
+    return ({tableName: "tavoloVip", guestName: x, place:index+1 })
 });
 
 
