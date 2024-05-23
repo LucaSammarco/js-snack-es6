@@ -1,103 +1,41 @@
-// Consegna:
-// Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
-// Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
+// SNACK 1
+// Dwayne Johnson ci ha chiesto di creare i segnaposto per il tavolo degli invitati alla sua mega festa vip.
+// Ci ha lasciato il nome del tavolo ("Tavolo Vip") e la lista degli invitati in ordine di posto:
 
-// MILESTONE 0:
-// Creare l’array di oggetti con le informazioni fornite.
+// [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
 
-// MILESTONE 1:
-// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
-// MILESTONE 2:
-// Stampare le stesse informazioni su DOM sottoforma di stringhe
+// Ma  la tipografia per stampare il tutto vuole che le mandiamo una lista di ospiti in un formato specifico, per cui dobbiamo fare in modo che ogni ospite sia un oggetto letterale javascript che ha come proprietà:
 
-// BONUS 1:
-// Trasformare la stringa foto in una immagine effettiva
 
-// BONUS 2:
-// Organizzare i singoli membri in card/schede
-// Consigli del giorno:
-// Ragioniamo come sempre a step. Prima la logica in italiano e poi traduciamo in codice.
-// E ricordiamoci che console.log() è nostro amico!
+// nome del tavolo (tableName),
+// nome dell'ospite (guestName),
+// posto occupato (place),
+
+// Generiamo e stampiamo in console la lista per i segnaposto.
 
 
 
-// Wayne Barnett	Founder & CEO	wayne-barnett-founder-ceo.jpg
-// Angela Caroll	Chief Editor	angela-caroll-chief-editor.jpg
-// Walter Gordon	Office Manager	walter-gordon-office-manager.jpg
-// Angela Lopez	Social Media Manager	angela-lopez-social-media-manager.jpg
-// Scott Estrada	Developer	scott-estrada-developer.jpg
-// Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
-
-//! Creazione Array
-
-const team = [
-    {
-        nome: "Wayne Barnett",
-        ruolo: "Founder & CEO", 
-        foto: "wayne-barnett-founder-ceo.jpg"
-    },
-    {
-        nome: "Angela Caroll",
-        ruolo: "Chief Editor",
-        foto: "angela-caroll-chief-editor.jpg"
-    },
-    {
-        nome: "Walter Gordon",
-        ruolo: "Office Manager",
-        foto: "walter-gordon-office-manager.jpg"
-    },
-    {
-        nome: "Angela Lopez",
-        ruolo: "Social Media Manager",
-        foto: "angela-lopez-social-media-manager.jpg"
-    },
-    {
-        nome: "Scott Estrada",
-        ruolo: "Developer",
-        foto: "scott-estrada-developer.jpg"
-    },
-    {
-        nome: "Barbara Ramos",
-        ruolo: "Graphic Designer",
-        foto: "barbara-ramos-graphic-designer.jpg"
-    }
-];
-
-// console.log(team);
-
-//! Ciclo
+// SNACK 2
+// Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
+// 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo, ad esempio (Marco della Rovere => MARCO DELLA ROVERE);
+// 2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
+// 3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+// Buon pomeriggio e buon lavoro !!! :faccia_nerd:
 
 
-
-const teamMembersDom = document.getElementById("teamMembers");
-const ulElement = document.createElement("ul");
-teamMembersDom.appendChild(ulElement);
-
-
-for (let index = 0; index < team.length; index++) {
-    console.log(team[index]);
-    //! Creazione li per ogni elemento dell Array
-    liElement = document.createElement("li");
+// Id  Name                Grades
+// 213 Giuseppina della Rovere 78
+// 110 Paola Cortellessa       96
+// 250 Andrea Mantegna         48
+// 145 Gaia Borromini          74
+// 196 Luigi Grimaldello       68
+// 102 Piero della Francesca   50
+// 120 Francesca da Polenta    84
 
 
-    //! Trasforma in stringa il contentuto dell Array
-    let stringa = JSON.stringify(team[index])
-    console.log(stringa)
+//* Snack 1
 
+const tavoloVip = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
 
-    //! Aggiunge Stringa al Dom
-    liElement.textContent = stringa;
-    ulElement.appendChild(liElement);
-}
-
-
-for (let index = 0; index < team.length; index++) {
-    for (const key in team) {
-        console.log(team[index]);
-    }
-}
-
-
-
-
+oggettiVip = 
