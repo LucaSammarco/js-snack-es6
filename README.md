@@ -28,3 +28,14 @@ Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e som
     *   /  Creare un array con gli studenti.
     *   / Cercare un modo per trasformare tutto in maiuscolo e creare una nuova lista con .map() (?)
     *   /  Creare le altre due liste filtrando la lista degli studenti. 
+
+
+SNACK 3
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare in console la bici con peso minore utilizzando destructuring e template literal
+
+
+    HC
+    *   / Creare arrey di oggetti
+    *   / Scegliere un modo per determinare la piu leggera e stamparla in console

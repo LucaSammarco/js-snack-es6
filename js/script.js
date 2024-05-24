@@ -21,15 +21,15 @@
 
 //* Snack 1
 
-// const tavoloVip = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
+const tavoloVip = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
 
 
-// nuovaLista = tavoloVip.map((x, index) => {
-//     return ({tableName: "tavoloVip", guestName: x, place:index+1 })
-// });
+nuovaLista = tavoloVip.map((x, index) => {
+    return ({tableName: "tavoloVip", guestName: x, place:index+1 })
+});
 
 
-// console.log(nuovaLista)
+console.log(nuovaLista)
 
 
 // SNACK 2
@@ -77,3 +77,29 @@ console.log(targhe);
 goodGrades = studenti.filter(studente => studente.grades >= 70)
 
 console.log(goodGrades)
+
+idAndGrades = studenti.filter(studente => studente.grades >= 70 && studente.id >= 120)
+
+console.log(idAndGrades)
+
+
+// SNACK 3
+// Creare un array di oggetti:
+// Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+// Stampare in console la bici con peso minore utilizzando destructuring e template literal
+
+
+//     HC
+//     *   / Creare arrey di oggetti
+//     *   / Scegliere un modo per determinare la piu leggera e stamparla in console
+
+let biciclette = [
+    { nome: 'Bianchi Oltre XR4', peso: 7.5 },
+    { nome: 'Cannondale SuperSix EVO', peso: 7.8 },
+    { nome: 'Trek Emonda', peso: 7.2 },
+    { nome: 'Specialized Tarmac SL7', peso: 7.6 },
+    { nome: 'Pinarello Dogma F12', peso: 7.3 }
+  ];
+  
+  console.log(biciclette);
+  
