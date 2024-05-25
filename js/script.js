@@ -102,10 +102,15 @@ const biciclette = [
   ];
   
   console.log(biciclette);
-  
-  const pesoMinimo = Infinity
 
-  biciclette.forEach({element}) => {
-    console.log({element});
-});
+  let pesoMinimo = Infinity;
+
+  biciclette.forEach(element => {
+    if (element.peso < pesoMinimo) {
+      pesoMinimo = element.peso;
+    }
+  });
+
+  console.log(pesoMinimo)
+   
   
