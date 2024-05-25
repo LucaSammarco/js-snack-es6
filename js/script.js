@@ -122,6 +122,17 @@ const biciclette = [
   console.log(`La bicicletta piu' leggera e'${nome} con un peso di ${peso} kg`)
 
 
+//   SNACK 4
+//   Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+//   Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+//   Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti.
+//   Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+  
+//       /   * Creare array.
+//       /   * Creare un nuovo array aggiornato andando a generare numeri random al posto del valore del paramentro se questi è uguale a 0
+//       /   * Criamo un nuovo array destrutturando quello precedente (?) e stampiamo
+  
+
 
   const squadreCalcio = [
     { nome: 'Juventus', puntiFatti: 0, falliSubiti: 0 },
@@ -138,10 +149,16 @@ function getRandomInt(max) {
   }
 
 
-nuovaLista = squadreCalcio.map((squadra, index) => {
+listaAggiornataSquadre = squadreCalcio.map((squadra, index) => {
 
    return ({squadra: squadra.nome ,  puntiFatti: getRandomInt(100), falliSubiti:getRandomInt(500)})
 
 });
 
-console.log(nuovaLista)
+console.log(listaAggiornataSquadre);
+
+const [{squadra, falliSubiti}] = listaAggiornataSquadre;
+
+const squadraFalli = [{squadra, falliSubiti}]
+
+console.log(squadraFalli)
