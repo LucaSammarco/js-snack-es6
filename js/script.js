@@ -132,3 +132,14 @@ const biciclette = [
 ];
 
 console.log(squadreCalcio);
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max + 1);
+  }
+
+
+  nuovaLista = squadreCalcio.map((squadra, index) => {
+
+   return ({squadra.nome: nome, squadra.puntiFatti: getRandomInt(100), squadra.falliSubiti:getRandomInt(500)})
+
+});
