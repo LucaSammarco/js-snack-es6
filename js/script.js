@@ -157,8 +157,6 @@ listaAggiornataSquadre = squadreCalcio.map((squadra, index) => {
 
 console.log(listaAggiornataSquadre);
 
-const [{squadra, falliSubiti}] = listaAggiornataSquadre;
-
-const squadraFalli = [{squadra, falliSubiti}]
-
-console.log(squadraFalli)
+const nomeFalli = listaAggiornataSquadre.map(({ nome, falliSubiti }) => {
+    return { nome, falliSubiti };
+});
