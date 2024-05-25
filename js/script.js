@@ -138,8 +138,10 @@ function getRandomInt(max) {
   }
 
 
-  nuovaLista = squadreCalcio.map((squadra, index) => {
+nuovaLista = squadreCalcio.map((squadra, index) => {
 
-   return ({squadra.nome: nome, squadra.puntiFatti: getRandomInt(100), squadra.falliSubiti:getRandomInt(500)})
+   return ({squadra: squadra.nome ,  puntiFatti: getRandomInt(100), falliSubiti:getRandomInt(500)})
 
 });
+
+console.log(nuovaLista)
