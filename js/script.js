@@ -114,3 +114,7 @@ const biciclette = [
   console.log(pesoMinimo);
 
   biciclettaLeggera = biciclette.filter(bicicletta => bicicletta.peso === pesoMinimo);
+
+  const{nome, peso} = biciclettaLeggera
+
+  console.log(nome, peso)
