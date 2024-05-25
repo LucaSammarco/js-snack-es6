@@ -111,6 +111,6 @@ const biciclette = [
     }
   });
 
-  console.log(pesoMinimo)
-   
-  
+  console.log(pesoMinimo);
+
+  biciclettaLeggera = biciclette.filter(bicicletta => bicicletta.peso === pesoMinimo);
