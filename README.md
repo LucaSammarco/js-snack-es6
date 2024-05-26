@@ -39,8 +39,8 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
     HC
     *   / Creare arrey di oggetti
     *   / Ciclare l array e determinare quale è quello col peso minore
-    *   / creare una varabiabile con la bicicletta piu legegra
-    *   / Stammpare in console
+    *   / Creare una varabiabile con la bicicletta piu leggera
+    *   / Stampare in console
 
     SNACK 4
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
@@ -52,3 +52,20 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
     /   * Creare un nuovo array aggiornato andando a generare numeri random al posto del valore del paramentro se questi è uguale a 0
     /   * Criamo un nuovo array destrutturando quello precedente (?) e stampiamo
 
+BONUS 1: SNACK 5
+Abbiamo questa lista di articoli di moda:
+name        type      color
+Poppy       tshirt    red
+Jumping     occhiali  blue
+CrissCross  scarpe    black
+Jenny       borsa     pink
+Questi articoli sono inseriti in un array di oggetti.
+Dobbiamo attaccare a ognuno un cartellino position con una lettera dell'alfabeto generata casualmente e inserire gli oggetti così modificati in un nuovo array di oggetti.
+
+
+
+    HC
+    *   / Creare arrey di oggetti
+    *   / Creare funzione per generare una lettera casuale. (?)
+    *   / Con .map ciclare all interno degli oggetti e aggiungere la proprieta position (con contenuto il risultato della funzione)
+    *   / Stampare in console
