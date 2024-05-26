@@ -184,3 +184,9 @@ function getRandomLetter() {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   return alphabet[Math.floor(Math.random() * alphabet.length)];
 }
+
+newList = items.map((item, index) => {
+
+  return ({name: item.name, type: item.type, color: item.color, position: ` ${index} ${getRandomLetter()}` })
+
+});
